@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14251d">
+  <meta name="description" content="Discover Shourya Nature Way — dining, garden experiences, events and entertainment.">
+  <title>Shourya Nature Way | Dine • Unwind • Celebrate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><span>AN EXPERIENCE TO REMEMBER</span><span>DINING · EVENTS · ENTERTAINMENT</span></div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Shourya Nature Way home">
+      <span class="brand-mark">SNW</span><span class="brand-name">SHOURYA <b>NATURE WAY</b><small>RESORT · SPORTS · NIGHT CLUB</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#experiences">Experiences</a><a href="#gallery">Gallery</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#payment">UPI Payment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo"></div><div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO SHOURYA NATURE WAY</p>
+        <h1>Good moments.<br><em>Beautiful places.</em></h1>
+        <p class="hero-copy">A refreshing destination for great food, garden gatherings, celebrations and nights worth remembering.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#experiences">Explore experiences <span>↗</span></a><a class="btn btn-outline" href="#contact">Plan your visit</a></div>
+      </div>
+      <div class="hero-note"><span>01 / 04</span><span>MAKE EVERY MOMENT COUNT</span></div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="section-kicker">THE SHOURYA EXPERIENCE</div>
+      <div class="intro-grid">
+        <h2>More than a place.<br><em>It's your next memory.</em></h2>
+        <p>From relaxed garden moments and thoughtfully presented food to lively evenings and special celebrations, explore the different experiences at Shourya Nature Way.</p>
+      </div>
+      <div class="stats"><div><strong>01</strong><span>ONE DESTINATION</span></div><div><strong>∞</strong><span>MOMENTS TO MAKE</span></div><div><strong>YOU</strong><span>BRING THE OCCASION</span></div></div>
+    </section>
+
+    <section class="experiences section" id="experiences">
+      <div class="section-heading"><div><div class="section-kicker">EXPLORE WHAT WE OFFER</div><h2>Find your <em>experience</em></h2></div><p>Choose the mood. We'll help you discover the setting.</p></div>
+      <div class="experience-grid">
+        <a class="experience-card large" href="#gallery" data-filter-link="garden"><img src="assets/gallery-20.webp" onerror="this.src='assets/gallery-01.webp'" alt="Garden lawn and outdoor seating"><span class="card-shade"></span><span class="card-label">01 / OUTDOORS</span><span class="card-title">Garden & Resort <b>↗</b></span></a>
+        <a class="experience-card" href="#gallery" data-filter-link="food"><img src="assets/gallery-04.webp" onerror="this.src='assets/gallery-02.webp'" alt="Beautifully presented food"><span class="card-shade"></span><span class="card-label">02 / TASTE</span><span class="card-title">Restaurant & Food <b>↗</b></span></a>
+        <a class="experience-card" href="#gallery" data-filter-link="events"><img src="assets/gallery-14.webp" onerror="this.src='assets/gallery-03.webp'" alt="Outdoor event setup"><span class="card-shade"></span><span class="card-label">03 / CELEBRATE</span><span class="card-title">Events & Parties <b>↗</b></span></a>
+        <a class="experience-card" href="#gallery" data-filter-link="club"><img src="assets/gallery-18.webp" onerror="this.src='assets/gallery-05.webp'" alt="Club interior with blue lighting"><span class="card-shade"></span><span class="card-label">04 / AFTER DARK</span><span class="card-title">Club & Entertainment <b>↗</b></span></a>
+      </div>
+      <p class="fineprint">Experience categories and images are an initial draft based on the photos shared. Confirm the exact facilities and services before publishing.</p>
+    </section>
+
+    <section class="gallery-section section" id="gallery">
+      <div class="section-heading"><div><div class="section-kicker">A LOOK AROUND</div><h2>Moments at <em>Shourya</em></h2></div><p>A visual collection of the spaces, food and celebrations.</p></div>
+      <div class="filters" role="group" aria-label="Filter gallery">
+        <button class="filter active" data-filter="all">All photos</button><button class="filter" data-filter="garden">Garden</button><button class="filter" data-filter="food">Food</button><button class="filter" data-filter="events">Events</button><button class="filter" data-filter="club">Club</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <p class="gallery-hint">Select a photo to view it larger. Gallery images can be replaced or reordered in <code>script.js</code>.</p>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <div><div class="section-kicker">EXPLORE OUR MENUS</div><h2>Good food. <em>Great evenings.</em></h2></div>
+        <p>Browse the March 2026 menus and check item prices before contacting the team.</p>
+      </div>
+      <div class="menu-tabs" role="group" aria-label="Choose a menu">
+        <button class="menu-tab active" data-menu-src="assets/food-menu-march-2026.pdf">Garden of Eat’n · Food Menu</button>
+        <button class="menu-tab" data-menu-src="assets/bar-menu-march-2026.pdf">Wine Garden Night Club · Bar Menu</button>
+        <a class="menu-download" id="menuDownload" href="assets/food-menu-march-2026.pdf" target="_blank" rel="noopener">Open / Download PDF ↗</a>
+      </div>
+      <div class="menu-viewer">
+        <iframe id="menuFrame" src="assets/food-menu-march-2026.pdf" title="Shourya Nature Way menu PDF" loading="lazy"></iframe>
+      </div>
+      <p class="menu-disclaimer">Menu and prices are reproduced from the business-provided March 2026 PDFs. Prices, availability and applicable taxes should be confirmed with the restaurant. Menu viewing does not place an order.</p>
+    </section>
+
+    <section class="payment section" id="payment">
+      <div class="payment-copy"><div class="section-kicker">QUICK & CONVENIENT</div><h2>Ready to make it<br><em>happen?</em></h2><p>For a booking advance or an amount confirmed directly by the team, scan the official Shourya Nature Way UPI QR or open your UPI app. Check the payee name and amount before confirming.</p>
+        <a class="btn btn-gold" id="upiButton" href="#">Open UPI app <span>↗</span></a>
+        <small class="payment-note">Use only for a booking advance or amount confirmed by the business. This static website cannot verify payment or accept/confirm online orders. Alcohol orders are not available through this website.</small>
+      </div>
+      <div class="qr-card"><div class="qr-heading">SCAN & PAY</div><img src="assets/payment-qr.png" alt="Official Shourya Nature Way UPI payment QR"><strong>SHOURYA NATURE WAY</strong><span id="upiLabel">shourya.natureway@pnb</span><div class="qr-foot">BHIM · UPI · SECURE PAYMENT</div></div>
+    </section>
+
+    <section class="visit section" id="contact">
+      <div><div class="section-kicker">COME SAY HELLO</div><h2>Your table.<br><em>Your celebration.</em></h2><p>For reservations, event enquiries and other details, connect with the team.</p></div>
+      <div class="contact-panel">
+        <div class="contact-row"><span>LOCATION</span><strong id="addressText">11LNP, NH 62, Near Ridhi Sidhi Town and Flyover, Sri Ganganagar, Rajasthan</strong><a id="mapLink" href="#" target="_blank" rel="noopener">Get directions ↗</a></div>
+        <div class="contact-row"><span>PHONE</span><strong id="phoneText">72400-17400 / 72400-58400</strong><a href="tel:+917240017400">Call now ↗</a></div>
+        <div class="contact-row"><span>INSTAGRAM</span><strong>@shourya.natureway</strong><a id="instagramLink" href="https://www.instagram.com/shourya.natureway/" target="_blank" rel="noopener">Follow us ↗</a></div>
+        <a class="btn btn-dark" id="enquiryButton" href="https://www.instagram.com/shourya.natureway/" target="_blank" rel="noopener">Send an enquiry <span>↗</span></a>
+        <div class="map-container"><iframe id="mapFrame" title="Shourya Nature Way location on Google Maps" src="" width="100%" height="360" style="border:0" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">SNW</span><span class="brand-name">SHOURYA <b>NATURE WAY</b><small>RESORT · SPORTS · NIGHT CLUB</small></span></a><span>© <span id="year"></span> Shourya Nature Way. All rights reserved.</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Photo viewer"><button id="lightboxClose" aria-label="Close photo">×</button><button id="lightboxPrev" aria-label="Previous photo">‹</button><img id="lightboxImage" alt=""><button id="lightboxNext" aria-label="Next photo">›</button></div>
+  <script src="config.js"></script><script src="script.js"></script>
+</body>
+</html>
